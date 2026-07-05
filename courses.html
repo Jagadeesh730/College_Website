@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Courses - SRM University</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="loading-screen">
+    <img src="assets/images/logo/college-logo.svg" alt="Logo" class="loader-logo">
+    <div class="loader-spinner"></div>
+    <div class="loader-text">Loading...</div>
+    <div class="loader-progress"><div class="loader-progress-bar"></div></div>
+  </div>
+  <div id="toast-container" class="toast-container"></div>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-brand">
+      <img src="assets/images/logo/college-logo.svg" alt="College Logo">
+      <span class="college-name">SRM University</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="departments.html">Departments</a>
+        <ul class="dropdown-menu">
+          <li><a href="departments.html#cse">Computer Science</a></li>
+          <li><a href="departments.html#it">Information Technology</a></li>
+          <li><a href="departments.html#aiml">AI & Data Science</a></li>
+          <li><a href="departments.html#ece">Electronics & Comm.</a></li>
+          <li><a href="departments.html#eee">Electrical & Electronics</a></li>
+          <li><a href="departments.html#mech">Mechanical</a></li>
+          <li><a href="departments.html#civil">Civil</a></li>
+        </ul>
+      </li>
+      <li><a href="courses.html" class="active">Courses</a>
+        <ul class="dropdown-menu">
+          <li><a href="#ug">Undergraduate</a></li>
+          <li><a href="#pg">Postgraduate</a></li>
+          <li><a href="#btech">B.Tech</a></li>
+          <li><a href="#mtech">M.Tech</a></li>
+          <li><a href="#mba">MBA</a></li>
+        </ul>
+      </li>
+      <li><a href="admissions.html">Admissions</a></li>
+      <li><a href="placements.html">Placements</a></li>
+      <li><a href="faculty.html">Faculty</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><button class="theme-toggle" aria-label="Toggle Dark Mode"><i class="fas fa-moon"></i></button></li>
+    </ul>
+    <div class="menu-toggle"><span></span><span></span><span></span></div>
+  </nav>
+
+  <div id="page-content">
+    <section class="page-header">
+      <h1>Programs & Courses</h1>
+      <p>Choose from a wide range of academic programs</p>
+      <div class="breadcrumb"><a href="index.html">Home</a> <span>/</span> <span>Courses</span></div>
+    </section>
+
+    <section class="section">
+      <div class="faculty-search">
+        <i class="fas fa-search"></i>
+        <input type="text" id="courseSearch" placeholder="Search courses...">
+      </div>
+
+      <div id="ug">
+        <div class="section-title reveal slide-up">
+          <h2>Undergraduate Programs</h2>
+          <p>Build your foundation with our UG programs</p>
+        </div>
+        <div class="grid-2" style="max-width:var(--max-width);margin:0 auto 60px;">
+          <div class="course-card reveal slide-left" id="btech">
+            <div class="course-icon"><i class="fas fa-laptop-code"></i></div>
+            <h3>B.Tech in Computer Science & Engineering</h3>
+            <span class="course-type">UG - 4 Years</span>
+            <p>A comprehensive program covering algorithms, data structures, AI, machine learning, and software engineering principles with hands-on projects and industry internships.</p>
+            <div class="course-details">
+              <span class="course-detail"><i class="fas fa-clock"></i> 4 Years (8 Semesters)</span>
+              <span class="course-detail"><i class="fas fa-users"></i> 180 Seats</span>
+              <span class="course-detail"><i class="fas fa-check-circle"></i> Eligibility: 10+2 with PCM (60%+)</span>
+              <span class="course-detail"><i class="fas fa-star"></i> AICTE Approved</span>
+            </div>
+          </div>
+          <div class="course-card reveal slide-right">
+            <div class="course-icon"><i class="fas fa-globe"></i></div>
+            <h3>B.Tech in Information Technology</h3>
+            <span class="course-type">UG - 4 Years</span>
+            <p>Focus on networking, cybersecurity, cloud computing, database management, and emerging web technologies with practical lab sessions.</p>
+            <div class="course-details">
+              <span class="course-detail"><i class="fas fa-clock"></i> 4 Years (8 Semesters)</span>
+              <span class="course-detail"><i class="fas fa-users"></i> 120 Seats</span>
+              <span class="course-detail"><i class="fas fa-check-circle"></i> Eligibility: 10+2 with PCM (60%+)</span>
+              <span class="course-detail"><i class="fas fa-star"></i> AICTE Approved</span>
+            </div>
+          </div>
+          <div class="course-card reveal slide-left">
+            <div class="course-icon"><i class="fas fa-robot"></i></div>
+            <h3>B.Tech in AI & Data Science</h3>
+            <span class="course-type">UG - 4 Years</span>
+            <p>Cutting-edge program in artificial intelligence, machine learning, deep learning, NLP, and big data analytics with dedicated AI lab.</p>
+            <div class="course-details">
+              <span class="course-detail"><i class="fas fa-clock"></i> 4 Years (8 Semesters)</span>
+              <span class="course-detail"><i class="fas fa-users"></i> 90 Seats</span>
+              <span class="course-detail"><i class="fas fa-check-circle"></i> Eligibility: 10+2 with PCM (60%+)</span>
+              <span class="course-detail"><i class="fas fa-star"></i> AICTE Approved</span>
+            </div>
+          </div>
+          <div class="course-card reveal slide-right">
+            <div class="course-icon"><i class="fas fa-chart-line"></i></div>
+            <h3>BBA - Bachelor of Business Administration</h3>
+            <span class="course-type">UG - 3 Years</span>
+            <p>Develop leadership, management, and entrepreneurial skills with a strong foundation in business principles and industry exposure.</p>
+            <div class="course-details">
+              <span class="course-detail"><i class="fas fa-clock"></i> 3 Years (6 Semesters)</span>
+              <span class="course-detail"><i class="fas fa-users"></i> 120 Seats</span>
+              <span class="course-detail"><i class="fas fa-check-circle"></i> Eligibility: 10+2 Any Stream (50%+)</span>
+              <span class="course-detail"><i class="fas fa-star"></i> UGC Approved</span>
+            </div>
+          </div>
+          <div class="course-card reveal slide-left">
+            <div class="course-icon"><i class="fas fa-code"></i></div>
+            <h3>BCA - Bachelor of Computer Applications</h3>
+            <span class="course-type">UG - 3 Years</span>
+            <p>Build expertise in programming, database management, web development, and software engineering with practical projects.</p>
+            <div class="course-details">
+              <span class="course-detail"><i class="fas fa-clock"></i> 3 Years (6 Semesters)</span>
+              <span class="course-detail"><i class="fas fa-users"></i> 90 Seats</span>
+              <span class="course-detail"><i class="fas fa-check-circle"></i> Eligibility: 10+2 with Maths (50%+)</span>
+              <span class="course-detail"><i class="fas fa-star"></i> UGC Approved</span>
+            </div>
+          </div>
+          <div class="course-card reveal slide-right">
+            <div class="course-icon"><i class="fas fa-calculator"></i></div>
+            <h3>B.Com - Bachelor of Commerce</h3>
+            <span class="course-type">UG - 3 Years</span>
+            <p>Comprehensive program in accounting, finance, taxation, and business law with industry exposure and internship opportunities.</p>
+            <div class="course-details">
+              <span class="course-detail"><i class="fas fa-clock"></i> 3 Years (6 Semesters)</span>
+              <span class="course-detail"><i class="fas fa-users"></i> 100 Seats</span>
+              <span class="course-detail"><i class="fas fa-check-circle"></i> Eligibility: 10+2 Commerce (50%+)</span>
+              <span class="course-detail"><i class="fas fa-star"></i> UGC Approved</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="pg">
+        <div class="section-title reveal slide-up">
+          <h2>Postgraduate Programs</h2>
+          <p>Advance your career with our PG programs</p>
+        </div>
+        <div class="grid-3" style="max-width:var(--max-width);margin:0 auto;">
+          <div class="course-card reveal slide-up" id="mtech">
+            <div class="course-icon"><i class="fas fa-microchip"></i></div>
+            <h3>M.Tech in Computer Science</h3>
+            <span class="course-type">PG - 2 Years</span>
+            <p>Advanced studies in AI, machine learning, data science, advanced algorithms, and research methodologies with thesis work.</p>
+            <div class="course-details">
+              <span class="course-detail"><i class="fas fa-clock"></i> 2 Years (4 Semesters)</span>
+              <span class="course-detail"><i class="fas fa-users"></i> 60 Seats</span>
+              <span class="course-detail"><i class="fas fa-check-circle"></i> Eligibility: B.Tech/BE in CSE/IT</span>
+              <span class="course-detail"><i class="fas fa-star"></i> AICTE Approved</span>
+            </div>
+          </div>
+          <div class="course-card reveal slide-up" id="mba">
+            <div class="course-icon"><i class="fas fa-briefcase"></i></div>
+            <h3>MBA - Master of Business Administration</h3>
+            <span class="course-type">PG - 2 Years</span>
+            <p>Transform into a business leader with specializations in finance, marketing, HR, operations, and business analytics.</p>
+            <div class="course-details">
+              <span class="course-detail"><i class="fas fa-clock"></i> 2 Years (4 Semesters)</span>
+              <span class="course-detail"><i class="fas fa-users"></i> 120 Seats</span>
+              <span class="course-detail"><i class="fas fa-check-circle"></i> Eligibility: Any Graduate (50%+)</span>
+              <span class="course-detail"><i class="fas fa-star"></i> AICTE Approved</span>
+            </div>
+          </div>
+          <div class="course-card reveal slide-up" id="mca">
+            <div class="course-icon"><i class="fas fa-database"></i></div>
+            <h3>MCA - Master of Computer Applications</h3>
+            <span class="course-type">PG - 2 Years</span>
+            <p>Advanced computing program covering software development, data science, IT management, and emerging technologies.</p>
+            <div class="course-details">
+              <span class="course-detail"><i class="fas fa-clock"></i> 2 Years (4 Semesters)</span>
+              <span class="course-detail"><i class="fas fa-users"></i> 90 Seats</span>
+              <span class="course-detail"><i class="fas fa-check-circle"></i> Eligibility: BCA/B.Sc IT (50%+)</span>
+              <span class="course-detail"><i class="fas fa-star"></i> AICTE Approved</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-about">
+        <h3><img src="assets/images/logo/college-logo.svg" alt="Logo" style="width:40px;height:40px;display:inline;vertical-align:middle;margin-right:10px;">SRM University</h3>
+        <p>SRM University of Science & Technology is committed to providing quality education, fostering research, and developing future leaders.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <div class="footer-links">
+          <a href="about.html">About Us</a>
+          <a href="admissions.html">Admissions</a>
+          <a href="courses.html">Courses</a>
+          <a href="placements.html">Placements</a>
+          <a href="faculty.html">Faculty</a>
+          <a href="events.html">Events</a>
+        </div>
+      </div>
+      <div>
+        <h4>Departments</h4>
+        <div class="footer-links">
+          <a href="departments.html#cse">Computer Science</a>
+          <a href="departments.html#it">Information Technology</a>
+          <a href="departments.html#aiml">AI & Data Science</a>
+          <a href="departments.html#ece">Electronics & Comm.</a>
+          <a href="departments.html#mech">Mechanical</a>
+          <a href="departments.html#civil">Civil</a>
+        </div>
+      </div>
+      <div>
+        <h4>Contact Info</h4>
+        <div class="footer-contact-item"><i class="fas fa-map-marker-alt"></i><span>SRM Nagar, Kattankulathur<br>Chennai, Tamil Nadu 603203</span></div>
+        <div class="footer-contact-item"><i class="fas fa-phone-alt"></i><span>+91 44 2741 7000</span></div>
+        <div class="footer-contact-item"><i class="fas fa-envelope"></i><span>admissions@srmuniversity.edu.in</span></div>
+        <div class="footer-contact-item"><i class="fas fa-clock"></i><span>Mon - Sat: 9:00 AM - 5:00 PM</span></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 SRM University of Science & Technology. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to Top"><i class="fas fa-arrow-up"></i></button>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+  <defs><linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#1a237e"/><stop offset="100%" style="stop-color:#4a148c"/></linearGradient></defs>
+  <rect width="600" height="400" fill="url(#g)"/>
+  <polygon points="300,80 200,200 400,200" fill="none" stroke="#ffd700" stroke-width="3" opacity="0.5"/>
+  <polygon points="300,130 230,220 370,220" fill="none" stroke="#4fc3f7" stroke-width="2" opacity="0.4"/>
+  <circle cx="300" cy="240" r="30" fill="none" stroke="#ffd700" stroke-width="2" opacity="0.4"/>
+  <text x="300" y="320" text-anchor="middle" fill="#ffffff" font-family="Arial" font-weight="bold" font-size="24" opacity="0.9">AI & Data Science</text>
+</svg>

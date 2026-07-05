@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+  <defs><linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#b71c1c"/><stop offset="100%" style="stop-color:#1a237e"/></linearGradient></defs>
+  <rect width="600" height="400" fill="url(#g)"/>
+  <rect x="200" y="50" width="200" height="250" rx="10" fill="#ffffff" opacity="0.1"/>
+  <text x="300" y="170" text-anchor="middle" fill="#ffd700" font-family="Arial" font-weight="bold" font-size="28" opacity="0.8">Hackathon</text>
+  <text x="300" y="120" text-anchor="middle" fill="#ffffff" font-family="Arial" font-size="40" opacity="0.2">&lt;/&gt;</text>
+  <text x="300" y="370" text-anchor="middle" fill="#ffffff" font-family="Arial" font-weight="bold" font-size="20">Code Hackathon</text>
+</svg>

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900">
+  <defs>
+    <linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d47a1"/>
+      <stop offset="100%" style="stop-color:#1a237e"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#g1)"/>
+  <!-- Auditorium -->
+  <path d="M200 350 Q600 250 1000 350 L1000 800 L200 800 Z" fill="#ffffff" opacity="0.08"/>
+  <ellipse cx="600" cy="350" rx="400" ry="80" fill="#ffffff" opacity="0.06"/>
+  <rect x="400" y="450" width="400" height="8" fill="#ffd700" opacity="0.3"/>
+  <rect x="400" y="500" width="400" height="8" fill="#ffd700" opacity="0.3"/>
+  <rect x="400" y="550" width="400" height="8" fill="#ffd700" opacity="0.3"/>
+  <rect x="400" y="600" width="400" height="8" fill="#ffd700" opacity="0.3"/>
+  <!-- Stage -->
+  <rect x="350" y="420" width="500" height="30" rx="5" fill="#ffd700" opacity="0.2"/>
+  <!-- Right side labs -->
+  <rect x="1050" y="300" width="300" height="500" rx="5" fill="#ffffff" opacity="0.1"/>
+  <rect x="1070" y="320" width="260" height="60" rx="3" fill="#ffffff" opacity="0.08"/>
+  <rect x="1070" y="400" width="260" height="60" rx="3" fill="#ffffff" opacity="0.08"/>
+  <rect x="1070" y="480" width="260" height="60" rx="3" fill="#ffffff" opacity="0.08"/>
+  <rect x="1070" y="560" width="260" height="60" rx="3" fill="#ffffff" opacity="0.08"/>
+  <!-- Fountain -->
+  <ellipse cx="600" cy="780" rx="80" ry="20" fill="#4fc3f7" opacity="0.3"/>
+  <rect x="595" y="720" width="10" height="60" fill="#4fc3f7" opacity="0.4"/>
+  <circle cx="600" cy="710" r="15" fill="#4fc3f7" opacity="0.3"/>
+  <text x="800" y="120" text-anchor="middle" fill="#ffffff" font-family="Arial" font-weight="bold" font-size="50" opacity="0.8">Auditorium</text>
+</svg>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a237e"/>
+      <stop offset="100%" style="stop-color:#0d47a1"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffd700"/>
+      <stop offset="100%" style="stop-color:#c9a84c"/>
+    </linearGradient>
+  </defs>
+  <circle cx="100" cy="100" r="95" fill="url(#bg)" stroke="url(#gold)" stroke-width="4"/>
+  <circle cx="100" cy="85" r="35" fill="none" stroke="url(#gold)" stroke-width="3"/>
+  <path d="M65 85 L100 40 L135 85" fill="none" stroke="url(#gold)" stroke-width="3" stroke-linecap="round"/>
+  <line x1="100" y1="50" x2="100" y2="120" stroke="url(#gold)" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="100" cy="120" r="8" fill="url(#gold)"/>
+  <text x="100" y="165" text-anchor="middle" fill="#fff" font-family="Arial" font-weight="bold" font-size="14">UNIVERSITY</text>
+</svg>

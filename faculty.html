@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Faculty - SRM University</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="loading-screen">
+    <img src="assets/images/logo/college-logo.svg" alt="Logo" class="loader-logo">
+    <div class="loader-spinner"></div>
+    <div class="loader-text">Loading...</div>
+    <div class="loader-progress"><div class="loader-progress-bar"></div></div>
+  </div>
+  <div id="toast-container" class="toast-container"></div>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-brand">
+      <img src="assets/images/logo/college-logo.svg" alt="College Logo">
+      <span class="college-name">SRM University</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="departments.html">Departments</a>
+        <ul class="dropdown-menu">
+          <li><a href="departments.html#cse">Computer Science</a></li>
+          <li><a href="departments.html#it">Information Technology</a></li>
+          <li><a href="departments.html#aiml">AI & Data Science</a></li>
+          <li><a href="departments.html#ece">Electronics & Comm.</a></li>
+          <li><a href="departments.html#eee">Electrical & Electronics</a></li>
+          <li><a href="departments.html#mech">Mechanical</a></li>
+          <li><a href="departments.html#civil">Civil</a></li>
+        </ul>
+      </li>
+      <li><a href="courses.html">Courses</a>
+        <ul class="dropdown-menu">
+          <li><a href="courses.html#ug">Undergraduate</a></li>
+          <li><a href="courses.html#pg">Postgraduate</a></li>
+          <li><a href="courses.html#btech">B.Tech</a></li>
+          <li><a href="courses.html#mtech">M.Tech</a></li>
+          <li><a href="courses.html#mba">MBA</a></li>
+        </ul>
+      </li>
+      <li><a href="admissions.html">Admissions</a></li>
+      <li><a href="placements.html">Placements</a></li>
+      <li><a href="faculty.html" class="active">Faculty</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><button class="theme-toggle" aria-label="Toggle Dark Mode"><i class="fas fa-moon"></i></button></li>
+    </ul>
+    <div class="menu-toggle"><span></span><span></span><span></span></div>
+  </nav>
+
+  <div id="page-content">
+    <section class="page-header">
+      <h1>Our Faculty</h1>
+      <p>Learn from the best minds in academia and industry</p>
+      <div class="breadcrumb"><a href="index.html">Home</a> <span>/</span> <span>Faculty</span></div>
+    </section>
+
+    <section class="section">
+      <div class="faculty-search reveal slide-up">
+        <i class="fas fa-search"></i>
+        <input type="text" id="facultySearch" placeholder="Search faculty by name or department...">
+      </div>
+
+      <div class="grid-4" style="max-width:var(--max-width);margin:0 auto;">
+        <div class="faculty-card reveal zoom-in" data-dept="CSE">
+          <div class="faculty-card-image">
+            <img src="assets/images/faculty/faculty1.svg" alt="Dr. Rajesh Kumar">
+          </div>
+          <div class="faculty-card-body">
+            <h3>Dr. Rajesh Kumar</h3>
+            <div class="designation">Professor & Head</div>
+            <div class="qualification">Ph.D (IIT Madras), MTech (IIT Delhi)</div>
+            <span class="department-tag">Computer Science</span>
+          </div>
+        </div>
+        <div class="faculty-card reveal zoom-in" data-dept="IT">
+          <div class="faculty-card-image">
+            <img src="assets/images/faculty/faculty2.svg" alt="Dr. Priya Sharma">
+          </div>
+          <div class="faculty-card-body">
+            <h3>Dr. Priya Sharma</h3>
+            <div class="designation">Professor & Head</div>
+            <div class="qualification">Ph.D (IIT Bombay), MTech (IIT KGP)</div>
+            <span class="department-tag">Information Technology</span>
+          </div>
+        </div>
+        <div class="faculty-card reveal zoom-in" data-dept="AI&ML">
+          <div class="faculty-card-image">
+            <img src="assets/images/faculty/faculty1.svg" alt="Dr. Vikram Patel">
+          </div>
+          <div class="faculty-card-body">
+            <h3>Dr. Vikram Patel</h3>
+            <div class="designation">Professor & Head</div>
+            <div class="qualification">Ph.D (NUS Singapore), MTech (IIT Kanpur)</div>
+            <span class="department-tag">AI & Data Science</span>
+          </div>
+        </div>
+        <div class="faculty-card reveal zoom-in" data-dept="ECE">
+          <div class="faculty-card-image">
+            <img src="assets/images/faculty/faculty2.svg" alt="Dr. Sunita Reddy">
+          </div>
+          <div class="faculty-card-body">
+            <h3>Dr. Sunita Reddy</h3>
+            <div class="designation">Professor & Head</div>
+            <div class="qualification">Ph.D (IISc), MTech (IIT Madras)</div>
+            <span class="department-tag">Electronics & Comm.</span>
+          </div>
+        </div>
+        <div class="faculty-card reveal zoom-in" data-dept="EEE">
+          <div class="faculty-card-image">
+            <img src="assets/images/faculty/faculty1.svg" alt="Dr. K. Srinivasan">
+          </div>
+          <div class="faculty-card-body">
+            <h3>Dr. K. Srinivasan</h3>
+            <div class="designation">Professor & Head</div>
+            <div class="qualification">Ph.D (IIT Delhi), MTech (IIT Madras)</div>
+            <span class="department-tag">Electrical & Electronics</span>
+          </div>
+        </div>
+        <div class="faculty-card reveal zoom-in" data-dept="MECH">
+          <div class="faculty-card-image">
+            <img src="assets/images/faculty/faculty2.svg" alt="Dr. Anand Joshi">
+          </div>
+          <div class="faculty-card-body">
+            <h3>Dr. Anand Joshi</h3>
+            <div class="designation">Professor & Head</div>
+            <div class="qualification">Ph.D (IIT Bombay), MTech (IIT Kanpur)</div>
+            <span class="department-tag">Mechanical Engineering</span>
+          </div>
+        </div>
+        <div class="faculty-card reveal zoom-in" data-dept="CIVIL">
+          <div class="faculty-card-image">
+            <img src="assets/images/faculty/faculty1.svg" alt="Dr. Meena Iyer">
+          </div>
+          <div class="faculty-card-body">
+            <h3>Dr. Meena Iyer</h3>
+            <div class="designation">Professor & Head</div>
+            <div class="qualification">Ph.D (IIT Madras), MTech (IIT Delhi)</div>
+            <span class="department-tag">Civil Engineering</span>
+          </div>
+        </div>
+        <div class="faculty-card reveal zoom-in" data-dept="MBA">
+          <div class="faculty-card-image">
+            <img src="assets/images/faculty/faculty2.svg" alt="Dr. S. Narayanan">
+          </div>
+          <div class="faculty-card-body">
+            <h3>Dr. S. Narayanan</h3>
+            <div class="designation">Professor & Head</div>
+            <div class="qualification">Ph.D (FMS Delhi), MBA (IIM Ahmedabad)</div>
+            <span class="department-tag">MBA Department</span>
+          </div>
+        </div>
+        <div class="faculty-card reveal zoom-in" data-dept="MCA">
+          <div class="faculty-card-image">
+            <img src="assets/images/faculty/faculty1.svg" alt="Dr. Lakshmi Devi">
+          </div>
+          <div class="faculty-card-body">
+            <h3>Dr. Lakshmi Devi</h3>
+            <div class="designation">Professor & Head</div>
+            <div class="qualification">Ph.D (Anna Univ), MCA (NIT Trichy)</div>
+            <span class="department-tag">MCA Department</span>
+          </div>
+        </div>
+        <div class="faculty-card reveal zoom-in" data-dept="CSE">
+          <div class="faculty-card-image">
+            <img src="assets/images/faculty/faculty2.svg" alt="Dr. Amit Verma">
+          </div>
+          <div class="faculty-card-body">
+            <h3>Dr. Amit Verma</h3>
+            <div class="designation">Associate Professor</div>
+            <div class="qualification">Ph.D (IIT Delhi), 15 Years Experience</div>
+            <span class="department-tag">Computer Science</span>
+          </div>
+        </div>
+        <div class="faculty-card reveal zoom-in" data-dept="IT">
+          <div class="faculty-card-image">
+            <img src="assets/images/faculty/faculty1.svg" alt="Dr. Neha Gupta">
+          </div>
+          <div class="faculty-card-body">
+            <h3>Dr. Neha Gupta</h3>
+            <div class="designation">Associate Professor</div>
+            <div class="qualification">Ph.D (IIT Roorkee), 12 Years Experience</div>
+            <span class="department-tag">Information Technology</span>
+          </div>
+        </div>
+        <div class="faculty-card reveal zoom-in" data-dept="AI&ML">
+          <div class="faculty-card-image">
+            <img src="assets/images/faculty/faculty2.svg" alt="Dr. Rohan Desai">
+          </div>
+          <div class="faculty-card-body">
+            <h3>Dr. Rohan Desai</h3>
+            <div class="designation">Assistant Professor</div>
+            <div class="qualification">Ph.D (IIT Madras), 8 Years Experience</div>
+            <span class="department-tag">AI & Data Science</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-about">
+        <h3><img src="assets/images/logo/college-logo.svg" alt="Logo" style="width:40px;height:40px;display:inline;vertical-align:middle;margin-right:10px;">SRM University</h3>
+        <p>SRM University of Science & Technology is committed to providing quality education, fostering research, and developing future leaders.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <div class="footer-links">
+          <a href="about.html">About Us</a>
+          <a href="admissions.html">Admissions</a>
+          <a href="courses.html">Courses</a>
+          <a href="placements.html">Placements</a>
+          <a href="faculty.html">Faculty</a>
+          <a href="events.html">Events</a>
+        </div>
+      </div>
+      <div>
+        <h4>Departments</h4>
+        <div class="footer-links">
+          <a href="departments.html#cse">Computer Science</a>
+          <a href="departments.html#it">Information Technology</a>
+          <a href="departments.html#aiml">AI & Data Science</a>
+          <a href="departments.html#ece">Electronics & Comm.</a>
+          <a href="departments.html#mech">Mechanical</a>
+          <a href="departments.html#civil">Civil</a>
+        </div>
+      </div>
+      <div>
+        <h4>Contact Info</h4>
+        <div class="footer-contact-item"><i class="fas fa-map-marker-alt"></i><span>SRM Nagar, Kattankulathur<br>Chennai, Tamil Nadu 603203</span></div>
+        <div class="footer-contact-item"><i class="fas fa-phone-alt"></i><span>+91 44 2741 7000</span></div>
+        <div class="footer-contact-item"><i class="fas fa-envelope"></i><span>admissions@srmuniversity.edu.in</span></div>
+        <div class="footer-contact-item"><i class="fas fa-clock"></i><span>Mon - Sat: 9:00 AM - 5:00 PM</span></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 SRM University of Science & Technology. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to Top"><i class="fas fa-arrow-up"></i></button>
+  <script src="script.js"></script>
+</body>
+</html>

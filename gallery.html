@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery - SRM University</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="loading-screen">
+    <img src="assets/images/logo/college-logo.svg" alt="Logo" class="loader-logo">
+    <div class="loader-spinner"></div>
+    <div class="loader-text">Loading...</div>
+    <div class="loader-progress"><div class="loader-progress-bar"></div></div>
+  </div>
+  <div id="toast-container" class="toast-container"></div>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-brand">
+      <img src="assets/images/logo/college-logo.svg" alt="College Logo">
+      <span class="college-name">SRM University</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="departments.html">Departments</a>
+        <ul class="dropdown-menu">
+          <li><a href="departments.html#cse">Computer Science</a></li>
+          <li><a href="departments.html#it">Information Technology</a></li>
+          <li><a href="departments.html#aiml">AI & Data Science</a></li>
+          <li><a href="departments.html#ece">Electronics & Comm.</a></li>
+          <li><a href="departments.html#eee">Electrical & Electronics</a></li>
+          <li><a href="departments.html#mech">Mechanical</a></li>
+          <li><a href="departments.html#civil">Civil</a></li>
+        </ul>
+      </li>
+      <li><a href="courses.html">Courses</a>
+        <ul class="dropdown-menu">
+          <li><a href="courses.html#ug">Undergraduate</a></li>
+          <li><a href="courses.html#pg">Postgraduate</a></li>
+          <li><a href="courses.html#btech">B.Tech</a></li>
+          <li><a href="courses.html#mtech">M.Tech</a></li>
+          <li><a href="courses.html#mba">MBA</a></li>
+        </ul>
+      </li>
+      <li><a href="admissions.html">Admissions</a></li>
+      <li><a href="placements.html">Placements</a></li>
+      <li><a href="faculty.html">Faculty</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="gallery.html" class="active">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><button class="theme-toggle" aria-label="Toggle Dark Mode"><i class="fas fa-moon"></i></button></li>
+    </ul>
+    <div class="menu-toggle"><span></span><span></span><span></span></div>
+  </nav>
+
+  <div id="page-content">
+    <section class="page-header">
+      <h1>Campus Gallery</h1>
+      <p>Explore our beautiful campus through images</p>
+      <div class="breadcrumb"><a href="index.html">Home</a> <span>/</span> <span>Gallery</span></div>
+    </section>
+
+    <section class="section">
+      <div class="gallery-grid">
+        <div class="gallery-item reveal zoom-in">
+          <img src="assets/images/gallery/gallery1.svg" alt="Campus View">
+          <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+        </div>
+        <div class="gallery-item reveal zoom-in">
+          <img src="assets/images/gallery/gallery2.svg" alt="Library">
+          <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+        </div>
+        <div class="gallery-item reveal zoom-in">
+          <img src="assets/images/gallery/gallery3.svg" alt="Sports Complex">
+          <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+        </div>
+        <div class="gallery-item reveal zoom-in">
+          <img src="assets/images/gallery/gallery4.svg" alt="Auditorium">
+          <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+        </div>
+        <div class="gallery-item reveal zoom-in">
+          <img src="assets/images/gallery/gallery5.svg" alt="Lab Facilities">
+          <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+        </div>
+        <div class="gallery-item reveal zoom-in">
+          <img src="assets/images/gallery/gallery6.svg" alt="Cultural Event">
+          <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+        </div>
+        <div class="gallery-item reveal zoom-in">
+          <img src="assets/images/gallery/gallery1.svg" alt="Campus at Night">
+          <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+        </div>
+        <div class="gallery-item reveal zoom-in">
+          <img src="assets/images/gallery/gallery2.svg" alt="Library Interior">
+          <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+        </div>
+        <div class="gallery-item reveal zoom-in">
+          <img src="assets/images/gallery/gallery3.svg" alt="Hostel Block">
+          <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Lightbox -->
+  <div class="lightbox">
+    <button class="lightbox-close">&times;</button>
+    <button class="lightbox-nav prev"><i class="fas fa-chevron-left"></i></button>
+    <img class="lightbox-img" src="" alt="Gallery Image">
+    <button class="lightbox-nav next"><i class="fas fa-chevron-right"></i></button>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-about">
+        <h3><img src="assets/images/logo/college-logo.svg" alt="Logo" style="width:40px;height:40px;display:inline;vertical-align:middle;margin-right:10px;">SRM University</h3>
+        <p>SRM University of Science & Technology is committed to providing quality education, fostering research, and developing future leaders.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <div class="footer-links">
+          <a href="about.html">About Us</a>
+          <a href="admissions.html">Admissions</a>
+          <a href="courses.html">Courses</a>
+          <a href="placements.html">Placements</a>
+          <a href="faculty.html">Faculty</a>
+          <a href="events.html">Events</a>
+        </div>
+      </div>
+      <div>
+        <h4>Departments</h4>
+        <div class="footer-links">
+          <a href="departments.html#cse">Computer Science</a>
+          <a href="departments.html#it">Information Technology</a>
+          <a href="departments.html#aiml">AI & Data Science</a>
+          <a href="departments.html#ece">Electronics & Comm.</a>
+          <a href="departments.html#mech">Mechanical</a>
+          <a href="departments.html#civil">Civil</a>
+        </div>
+      </div>
+      <div>
+        <h4>Contact Info</h4>
+        <div class="footer-contact-item"><i class="fas fa-map-marker-alt"></i><span>SRM Nagar, Kattankulathur<br>Chennai, Tamil Nadu 603203</span></div>
+        <div class="footer-contact-item"><i class="fas fa-phone-alt"></i><span>+91 44 2741 7000</span></div>
+        <div class="footer-contact-item"><i class="fas fa-envelope"></i><span>admissions@srmuniversity.edu.in</span></div>
+        <div class="footer-contact-item"><i class="fas fa-clock"></i><span>Mon - Sat: 9:00 AM - 5:00 PM</span></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 SRM University of Science & Technology. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to Top"><i class="fas fa-arrow-up"></i></button>
+  <script src="script.js"></script>
+</body>
+</html>

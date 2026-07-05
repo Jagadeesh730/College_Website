@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Departments - SRM University</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="loading-screen">
+    <img src="assets/images/logo/college-logo.svg" alt="Logo" class="loader-logo">
+    <div class="loader-spinner"></div>
+    <div class="loader-text">Loading...</div>
+    <div class="loader-progress"><div class="loader-progress-bar"></div></div>
+  </div>
+  <div id="toast-container" class="toast-container"></div>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-brand">
+      <img src="assets/images/logo/college-logo.svg" alt="College Logo">
+      <span class="college-name">SRM University</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="departments.html" class="active">Departments</a>
+        <ul class="dropdown-menu">
+          <li><a href="#cse">Computer Science</a></li>
+          <li><a href="#it">Information Technology</a></li>
+          <li><a href="#aiml">AI & Data Science</a></li>
+          <li><a href="#ece">Electronics & Comm.</a></li>
+          <li><a href="#eee">Electrical & Electronics</a></li>
+          <li><a href="#mech">Mechanical</a></li>
+          <li><a href="#civil">Civil</a></li>
+          <li><a href="#mba">MBA</a></li>
+          <li><a href="#mca">MCA</a></li>
+        </ul>
+      </li>
+      <li><a href="courses.html">Courses</a>
+        <ul class="dropdown-menu">
+          <li><a href="courses.html#ug">Undergraduate</a></li>
+          <li><a href="courses.html#pg">Postgraduate</a></li>
+          <li><a href="courses.html#btech">B.Tech</a></li>
+          <li><a href="courses.html#mtech">M.Tech</a></li>
+          <li><a href="courses.html#mba">MBA</a></li>
+        </ul>
+      </li>
+      <li><a href="admissions.html">Admissions</a></li>
+      <li><a href="placements.html">Placements</a></li>
+      <li><a href="faculty.html">Faculty</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><button class="theme-toggle" aria-label="Toggle Dark Mode"><i class="fas fa-moon"></i></button></li>
+    </ul>
+    <div class="menu-toggle"><span></span><span></span><span></span></div>
+  </nav>
+
+  <div id="page-content">
+    <section class="page-header">
+      <h1>Our Departments</h1>
+      <p>Explore academic excellence across diverse disciplines</p>
+      <div class="breadcrumb"><a href="index.html">Home</a> <span>/</span> <span>Departments</span></div>
+    </section>
+
+    <section class="section">
+      <div class="faculty-search">
+        <i class="fas fa-search"></i>
+        <input type="text" id="deptSearch" placeholder="Search departments...">
+      </div>
+      <div class="grid-3" style="max-width:var(--max-width);margin:0 auto;">
+        <div class="dept-card reveal slide-up" id="cse">
+          <div class="dept-card-image">
+            <img src="assets/images/departments/cse.svg" alt="CSE">
+            <span class="dept-badge">Engineering</span>
+          </div>
+          <div class="dept-card-body">
+            <h3>Computer Science & Engineering</h3>
+            <div class="hod"><i class="fas fa-user-tie"></i> Dr. Rajesh Kumar, HOD</div>
+            <p>The department offers comprehensive programs in algorithms, data structures, artificial intelligence, machine learning, and software engineering. Accredited by NBA and recognized as a research center by Anna University.</p>
+            <a href="#" class="btn btn-secondary btn-sm">Learn More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="dept-card reveal slide-up" id="it">
+          <div class="dept-card-image">
+            <img src="assets/images/departments/it.svg" alt="IT">
+            <span class="dept-badge">Engineering</span>
+          </div>
+          <div class="dept-card-body">
+            <h3>Information Technology</h3>
+            <div class="hod"><i class="fas fa-user-tie"></i> Dr. Priya Sharma, HOD</div>
+            <p>Focus on networking, cybersecurity, cloud computing, database management, and web technologies. The department has state-of-the-art labs and strong industry partnerships with leading IT firms.</p>
+            <a href="#" class="btn btn-secondary btn-sm">Learn More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="dept-card reveal slide-up" id="aiml">
+          <div class="dept-card-image">
+            <img src="assets/images/departments/aiml.svg" alt="AI&ML">
+            <span class="dept-badge">Engineering</span>
+          </div>
+          <div class="dept-card-body">
+            <h3>Artificial Intelligence & Data Science</h3>
+            <div class="hod"><i class="fas fa-user-tie"></i> Dr. Vikram Patel, HOD</div>
+            <p>Cutting-edge program in AI, machine learning, deep learning, NLP, and big data analytics. Dedicated AI research lab with GPU clusters and strong industry collaborations.</p>
+            <a href="#" class="btn btn-secondary btn-sm">Learn More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="dept-card reveal slide-up" id="ece">
+          <div class="dept-card-image">
+            <img src="assets/images/departments/ece.svg" alt="ECE">
+            <span class="dept-badge">Engineering</span>
+          </div>
+          <div class="dept-card-body">
+            <h3>Electronics & Communication Engineering</h3>
+            <div class="hod"><i class="fas fa-user-tie"></i> Dr. Sunita Reddy, HOD</div>
+            <p>Specialization in VLSI design, embedded systems, IoT, signal processing, and communication technologies. Well-equipped labs including VLSI design center and embedded systems lab.</p>
+            <a href="#" class="btn btn-secondary btn-sm">Learn More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="dept-card reveal slide-up" id="eee">
+          <div class="dept-card-image">
+            <img src="assets/images/departments/eee.svg" alt="EEE">
+            <span class="dept-badge">Engineering</span>
+          </div>
+          <div class="dept-card-body">
+            <h3>Electrical & Electronics Engineering</h3>
+            <div class="hod"><i class="fas fa-user-tie"></i> Dr. K. Srinivasan, HOD</div>
+            <p>Comprehensive program in power systems, renewable energy, control systems, and electric vehicles. Advanced labs for power electronics and renewable energy research.</p>
+            <a href="#" class="btn btn-secondary btn-sm">Learn More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="dept-card reveal slide-up" id="mech">
+          <div class="dept-card-image">
+            <img src="assets/images/departments/mech.svg" alt="MECH">
+            <span class="dept-badge">Engineering</span>
+          </div>
+          <div class="dept-card-body">
+            <h3>Mechanical Engineering</h3>
+            <div class="hod"><i class="fas fa-user-tie"></i> Dr. Anand Joshi, HOD</div>
+            <p>Covering thermodynamics, robotics, automation, CAD/CAM, and advanced manufacturing processes. Industry-sponsored labs for robotics and 3D printing.</p>
+            <a href="#" class="btn btn-secondary btn-sm">Learn More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="dept-card reveal slide-up" id="civil">
+          <div class="dept-card-image">
+            <img src="assets/images/departments/civil.svg" alt="CIVIL">
+            <span class="dept-badge">Engineering</span>
+          </div>
+          <div class="dept-card-body">
+            <h3>Civil Engineering</h3>
+            <div class="hod"><i class="fas fa-user-tie"></i> Dr. Meena Iyer, HOD</div>
+            <p>Structural engineering, geotechnical studies, transportation, environmental engineering, and smart cities. Modern labs for material testing and structural analysis.</p>
+            <a href="#" class="btn btn-secondary btn-sm">Learn More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="dept-card reveal slide-up" id="mba">
+          <div class="dept-card-image">
+            <img src="assets/images/departments/mba.svg" alt="MBA">
+            <span class="dept-badge">Management</span>
+          </div>
+          <div class="dept-card-body">
+            <h3>Master of Business Administration (MBA)</h3>
+            <div class="hod"><i class="fas fa-user-tie"></i> Dr. S. Narayanan, HOD</div>
+            <p>Transform into a business leader with specializations in finance, marketing, HR, operations, and business analytics. Case-study based learning with industry immersion.</p>
+            <a href="#" class="btn btn-secondary btn-sm">Learn More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="dept-card reveal slide-up" id="mca">
+          <div class="dept-card-image">
+            <img src="assets/images/departments/mca.svg" alt="MCA">
+            <span class="dept-badge">Computer Applications</span>
+          </div>
+          <div class="dept-card-body">
+            <h3>Master of Computer Applications (MCA)</h3>
+            <div class="hod"><i class="fas fa-user-tie"></i> Dr. Lakshmi Devi, HOD</div>
+            <p>Advanced computing program covering software development, data science, IT management, and emerging technologies. Industry-aligned curriculum with live projects.</p>
+            <a href="#" class="btn btn-secondary btn-sm">Learn More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-about">
+        <h3><img src="assets/images/logo/college-logo.svg" alt="Logo" style="width:40px;height:40px;display:inline;vertical-align:middle;margin-right:10px;">SRM University</h3>
+        <p>SRM University of Science & Technology is committed to providing quality education, fostering research, and developing future leaders.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <div class="footer-links">
+          <a href="about.html">About Us</a>
+          <a href="admissions.html">Admissions</a>
+          <a href="courses.html">Courses</a>
+          <a href="placements.html">Placements</a>
+          <a href="faculty.html">Faculty</a>
+          <a href="events.html">Events</a>
+        </div>
+      </div>
+      <div>
+        <h4>Departments</h4>
+        <div class="footer-links">
+          <a href="departments.html#cse">Computer Science</a>
+          <a href="departments.html#it">Information Technology</a>
+          <a href="departments.html#aiml">AI & Data Science</a>
+          <a href="departments.html#ece">Electronics & Comm.</a>
+          <a href="departments.html#mech">Mechanical</a>
+          <a href="departments.html#civil">Civil</a>
+        </div>
+      </div>
+      <div>
+        <h4>Contact Info</h4>
+        <div class="footer-contact-item"><i class="fas fa-map-marker-alt"></i><span>SRM Nagar, Kattankulathur<br>Chennai, Tamil Nadu 603203</span></div>
+        <div class="footer-contact-item"><i class="fas fa-phone-alt"></i><span>+91 44 2741 7000</span></div>
+        <div class="footer-contact-item"><i class="fas fa-envelope"></i><span>admissions@srmuniversity.edu.in</span></div>
+        <div class="footer-contact-item"><i class="fas fa-clock"></i><span>Mon - Sat: 9:00 AM - 5:00 PM</span></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 SRM University of Science & Technology. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to Top"><i class="fas fa-arrow-up"></i></button>
+  <script src="script.js"></script>
+</body>
+</html>

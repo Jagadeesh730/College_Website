@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+  <defs><linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#0d47a1"/><stop offset="100%" style="stop-color:#00695c"/></linearGradient></defs>
+  <rect width="600" height="400" fill="url(#g)"/>
+  <path d="M150 200 Q200 100 250 200 Q300 300 350 200 Q400 100 450 200" fill="none" stroke="#ffd700" stroke-width="3" opacity="0.5"/>
+  <circle cx="300" cy="200" r="15" fill="#ffd700" opacity="0.3"/>
+  <text x="300" y="320" text-anchor="middle" fill="#ffffff" font-family="Arial" font-weight="bold" font-size="22" opacity="0.9">Electronics &</text>
+  <text x="300" y="355" text-anchor="middle" fill="#ffd700" font-family="Arial" font-size="18" opacity="0.8">Communication</text>
+</svg>

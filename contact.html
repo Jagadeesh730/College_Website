@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - SRM University</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="loading-screen">
+    <img src="assets/images/logo/college-logo.svg" alt="Logo" class="loader-logo">
+    <div class="loader-spinner"></div>
+    <div class="loader-text">Loading...</div>
+    <div class="loader-progress"><div class="loader-progress-bar"></div></div>
+  </div>
+  <div id="toast-container" class="toast-container"></div>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-brand">
+      <img src="assets/images/logo/college-logo.svg" alt="College Logo">
+      <span class="college-name">SRM University</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="departments.html">Departments</a>
+        <ul class="dropdown-menu">
+          <li><a href="departments.html#cse">Computer Science</a></li>
+          <li><a href="departments.html#it">Information Technology</a></li>
+          <li><a href="departments.html#aiml">AI & Data Science</a></li>
+          <li><a href="departments.html#ece">Electronics & Comm.</a></li>
+          <li><a href="departments.html#eee">Electrical & Electronics</a></li>
+          <li><a href="departments.html#mech">Mechanical</a></li>
+          <li><a href="departments.html#civil">Civil</a></li>
+        </ul>
+      </li>
+      <li><a href="courses.html">Courses</a>
+        <ul class="dropdown-menu">
+          <li><a href="courses.html#ug">Undergraduate</a></li>
+          <li><a href="courses.html#pg">Postgraduate</a></li>
+          <li><a href="courses.html#btech">B.Tech</a></li>
+          <li><a href="courses.html#mtech">M.Tech</a></li>
+          <li><a href="courses.html#mba">MBA</a></li>
+        </ul>
+      </li>
+      <li><a href="admissions.html">Admissions</a></li>
+      <li><a href="placements.html">Placements</a></li>
+      <li><a href="faculty.html">Faculty</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+      <li><button class="theme-toggle" aria-label="Toggle Dark Mode"><i class="fas fa-moon"></i></button></li>
+    </ul>
+    <div class="menu-toggle"><span></span><span></span><span></span></div>
+  </nav>
+
+  <div id="page-content">
+    <section class="page-header">
+      <h1>Contact Us</h1>
+      <p>We'd love to hear from you</p>
+      <div class="breadcrumb"><a href="index.html">Home</a> <span>/</span> <span>Contact</span></div>
+    </section>
+
+    <section class="section">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-item reveal slide-left">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <h4>Our Address</h4>
+              <p>SRM Nagar, Kattankulathur<br>Chennai, Tamil Nadu 603203</p>
+            </div>
+          </div>
+          <div class="contact-item reveal slide-left">
+            <i class="fas fa-phone-alt"></i>
+            <div>
+              <h4>Phone Number</h4>
+              <p>+91 44 2741 7000<br>+91 44 2741 7001</p>
+            </div>
+          </div>
+          <div class="contact-item reveal slide-left">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <h4>Email Address</h4>
+              <p>admissions@srmuniversity.edu.in<br>info@srmuniversity.edu.in</p>
+            </div>
+          </div>
+          <div class="contact-item reveal slide-left">
+            <i class="fas fa-clock"></i>
+            <div>
+              <h4>Office Hours</h4>
+              <p>Monday - Saturday: 9:00 AM - 5:00 PM<br>Sunday: Closed</p>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form reveal slide-right">
+          <h3 style="font-family:var(--font-heading);color:var(--primary);margin-bottom:25px;font-size:1.4rem;">Send Us a Message</h3>
+          <form id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Your Name *</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                <span class="error-message"></span>
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                <span class="error-message"></span>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone">
+                <span class="error-message"></span>
+              </div>
+              <div class="form-group">
+                <label for="subject">Subject *</label>
+                <input type="text" id="subject" name="subject" placeholder="Enter subject" required>
+                <span class="error-message"></span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="message">Your Message *</label>
+              <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+              <span class="error-message"></span>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;"><i class="fas fa-paper-plane"></i> Send Message</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="map-container reveal slide-up">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.002189411528!2d80.0411463!3d12.8234154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52f7b5e5c5b5e5%3A0x5e5c5b5e5c5b5e5c!2sSRM%20University!5e0!3m2!1sen!2sin!4v1" allowfullscreen loading="lazy"></iframe>
+      </div>
+    </section>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-about">
+        <h3><img src="assets/images/logo/college-logo.svg" alt="Logo" style="width:40px;height:40px;display:inline;vertical-align:middle;margin-right:10px;">SRM University</h3>
+        <p>SRM University of Science & Technology is committed to providing quality education, fostering research, and developing future leaders.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <div class="footer-links">
+          <a href="about.html">About Us</a>
+          <a href="admissions.html">Admissions</a>
+          <a href="courses.html">Courses</a>
+          <a href="placements.html">Placements</a>
+          <a href="faculty.html">Faculty</a>
+          <a href="events.html">Events</a>
+        </div>
+      </div>
+      <div>
+        <h4>Departments</h4>
+        <div class="footer-links">
+          <a href="departments.html#cse">Computer Science</a>
+          <a href="departments.html#it">Information Technology</a>
+          <a href="departments.html#aiml">AI & Data Science</a>
+          <a href="departments.html#ece">Electronics & Comm.</a>
+          <a href="departments.html#mech">Mechanical</a>
+          <a href="departments.html#civil">Civil</a>
+        </div>
+      </div>
+      <div>
+        <h4>Contact Info</h4>
+        <div class="footer-contact-item"><i class="fas fa-map-marker-alt"></i><span>SRM Nagar, Kattankulathur<br>Chennai, Tamil Nadu 603203</span></div>
+        <div class="footer-contact-item"><i class="fas fa-phone-alt"></i><span>+91 44 2741 7000</span></div>
+        <div class="footer-contact-item"><i class="fas fa-envelope"></i><span>admissions@srmuniversity.edu.in</span></div>
+        <div class="footer-contact-item"><i class="fas fa-clock"></i><span>Mon - Sat: 9:00 AM - 5:00 PM</span></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 SRM University of Science & Technology. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to Top"><i class="fas fa-arrow-up"></i></button>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admissions - SRM University</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="loading-screen">
+    <img src="assets/images/logo/college-logo.svg" alt="Logo" class="loader-logo">
+    <div class="loader-spinner"></div>
+    <div class="loader-text">Loading...</div>
+    <div class="loader-progress"><div class="loader-progress-bar"></div></div>
+  </div>
+  <div id="toast-container" class="toast-container"></div>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-brand">
+      <img src="assets/images/logo/college-logo.svg" alt="College Logo">
+      <span class="college-name">SRM University</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="departments.html">Departments</a>
+        <ul class="dropdown-menu">
+          <li><a href="departments.html#cse">Computer Science</a></li>
+          <li><a href="departments.html#it">Information Technology</a></li>
+          <li><a href="departments.html#aiml">AI & Data Science</a></li>
+          <li><a href="departments.html#ece">Electronics & Comm.</a></li>
+          <li><a href="departments.html#eee">Electrical & Electronics</a></li>
+          <li><a href="departments.html#mech">Mechanical</a></li>
+          <li><a href="departments.html#civil">Civil</a></li>
+        </ul>
+      </li>
+      <li><a href="courses.html">Courses</a>
+        <ul class="dropdown-menu">
+          <li><a href="courses.html#ug">Undergraduate</a></li>
+          <li><a href="courses.html#pg">Postgraduate</a></li>
+          <li><a href="courses.html#btech">B.Tech</a></li>
+          <li><a href="courses.html#mtech">M.Tech</a></li>
+          <li><a href="courses.html#mba">MBA</a></li>
+        </ul>
+      </li>
+      <li><a href="admissions.html" class="active">Admissions</a></li>
+      <li><a href="placements.html">Placements</a></li>
+      <li><a href="faculty.html">Faculty</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><button class="theme-toggle" aria-label="Toggle Dark Mode"><i class="fas fa-moon"></i></button></li>
+    </ul>
+    <div class="menu-toggle"><span></span><span></span><span></span></div>
+  </nav>
+
+  <div id="page-content">
+    <section class="page-header">
+      <h1>Admissions 2026</h1>
+      <p>Begin your journey at SRM University</p>
+      <div class="breadcrumb"><a href="index.html">Home</a> <span>/</span> <span>Admissions</span></div>
+    </section>
+
+    <section class="section">
+      <div class="section-title reveal slide-up">
+        <h2>Admission Process</h2>
+        <p>Simple and transparent admission process</p>
+      </div>
+      <div class="admission-process" style="max-width:var(--max-width);margin:0 auto 50px;">
+        <div class="process-step reveal zoom-in">
+          <div class="step-number">1</div>
+          <h4>Fill Application</h4>
+          <p>Complete the online application form with personal and academic details.</p>
+        </div>
+        <div class="process-step reveal zoom-in">
+          <div class="step-number">2</div>
+          <h4>Upload Documents</h4>
+          <p>Upload required documents including mark sheets, certificates, and photo.</p>
+        </div>
+        <div class="process-step reveal zoom-in">
+          <div class="step-number">3</div>
+          <h4>Application Review</h4>
+          <p>Our admission committee reviews your application and documents.</p>
+        </div>
+        <div class="process-step reveal zoom-in">
+          <div class="step-number">4</div>
+          <h4>Confirm Admission</h4>
+          <p>Receive offer letter, pay fees, and confirm your seat at SRM.</p>
+        </div>
+      </div>
+
+      <div class="grid-2" style="max-width:var(--max-width);margin:0 auto 50px;">
+        <div class="achievement-card reveal slide-left">
+          <i class="fas fa-file-alt"></i>
+          <h3>Eligibility Criteria</h3>
+          <div style="text-align:left;margin-top:15px;">
+            <p><strong>UG Programs:</strong> 10+2 with minimum 50% marks (PCM for B.Tech)</p>
+            <p><strong>PG Programs:</strong> Bachelor's degree with minimum 50% marks</p>
+            <p><strong>MBA:</strong> Any graduate with valid CAT/MAT/XAT score</p>
+            <p><strong>MCA:</strong> BCA/B.Sc IT with Mathematics at 10+2 or graduation</p>
+          </div>
+        </div>
+        <div class="achievement-card reveal slide-right">
+          <i class="fas fa-file-invoice"></i>
+          <h3>Required Documents</h3>
+          <div style="text-align:left;margin-top:15px;">
+            <p>&bull; 10th & 12th Mark Sheets</p>
+            <p>&bull; Degree Certificate (for PG applicants)</p>
+            <p>&bull; Transfer Certificate</p>
+            <p>&bull; Conduct Certificate</p>
+            <p>&bull; Passport Size Photographs</p>
+            <p>&bull; ID Proof (Aadhar/PAN/Passport)</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-2" style="max-width:var(--max-width);margin:0 auto 50px;">
+        <div class="achievement-card reveal slide-left">
+          <i class="fas fa-rupee-sign"></i>
+          <h3>Fee Structure</h3>
+          <div style="text-align:left;margin-top:15px;">
+            <p><strong>B.Tech:</strong> INR 1,50,000 per year</p>
+            <p><strong>BBA/BCA/B.Com:</strong> INR 80,000 per year</p>
+            <p><strong>M.Tech:</strong> INR 1,20,000 per year</p>
+            <p><strong>MBA:</strong> INR 2,00,000 per year</p>
+            <p><strong>MCA:</strong> INR 1,00,000 per year</p>
+          </div>
+        </div>
+        <div class="achievement-card reveal slide-right">
+          <i class="fas fa-graduation-cap"></i>
+          <h3>Scholarships</h3>
+          <div style="text-align:left;margin-top:15px;">
+            <p><strong>Merit Scholarship:</strong> Up to 100% tuition fee waiver for top rankers</p>
+            <p><strong>Sports Scholarship:</strong> Up to 50% for national-level athletes</p>
+            <p><strong>Need-based Aid:</strong> Financial assistance for deserving students</p>
+            <p><strong>Research Fellowship:</strong> For MTech/PhD students with stipend</p>
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align:center;margin-bottom:50px;display:flex;gap:15px;justify-content:center;flex-wrap:wrap;">
+        <a href="#form" class="btn btn-primary"><i class="fas fa-arrow-right"></i> Apply Online</a>
+        <a href="#" class="btn btn-secondary"><i class="fas fa-download"></i> Download Brochure</a>
+      </div>
+    </section>
+
+    <!-- Admission Form -->
+    <section class="section section-bg-light" id="form">
+      <div class="section-title reveal slide-up">
+        <h2>Admission Application Form</h2>
+        <p>Fill in your details to apply for admission</p>
+      </div>
+      <div class="admission-form-container reveal slide-up">
+        <form id="admissionForm">
+          <div class="form-group">
+            <label for="fullName">Full Name</label>
+            <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
+            <span class="error-message"></span>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="Enter your email" required>
+              <span class="error-message"></span>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="Enter 10-digit phone number" required>
+              <span class="error-message"></span>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="course">Select Course</label>
+            <select id="course" name="course" required>
+              <option value="">-- Select a Course --</option>
+              <option value="B.Tech CSE">B.Tech Computer Science & Engineering</option>
+              <option value="B.Tech IT">B.Tech Information Technology</option>
+              <option value="B.Tech AI&DS">B.Tech AI & Data Science</option>
+              <option value="B.Tech ECE">B.Tech Electronics & Communication</option>
+              <option value="B.Tech EEE">B.Tech Electrical & Electronics</option>
+              <option value="B.Tech Mechanical">B.Tech Mechanical Engineering</option>
+              <option value="B.Tech Civil">B.Tech Civil Engineering</option>
+              <option value="BBA">BBA - Bachelor of Business Administration</option>
+              <option value="BCA">BCA - Bachelor of Computer Applications</option>
+              <option value="B.Com">B.Com - Bachelor of Commerce</option>
+              <option value="M.Tech CSE">M.Tech Computer Science</option>
+              <option value="MBA">MBA - Master of Business Administration</option>
+              <option value="MCA">MCA - Master of Computer Applications</option>
+            </select>
+            <span class="error-message"></span>
+          </div>
+          <div class="form-group">
+            <label for="message">Message (Optional)</label>
+            <textarea id="message" name="message" placeholder="Any additional information or queries..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;"><i class="fas fa-paper-plane"></i> Submit Application</button>
+        </form>
+      </div>
+    </section>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-about">
+        <h3><img src="assets/images/logo/college-logo.svg" alt="Logo" style="width:40px;height:40px;display:inline;vertical-align:middle;margin-right:10px;">SRM University</h3>
+        <p>SRM University of Science & Technology is committed to providing quality education, fostering research, and developing future leaders.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <div class="footer-links">
+          <a href="about.html">About Us</a>
+          <a href="admissions.html">Admissions</a>
+          <a href="courses.html">Courses</a>
+          <a href="placements.html">Placements</a>
+          <a href="faculty.html">Faculty</a>
+          <a href="events.html">Events</a>
+        </div>
+      </div>
+      <div>
+        <h4>Departments</h4>
+        <div class="footer-links">
+          <a href="departments.html#cse">Computer Science</a>
+          <a href="departments.html#it">Information Technology</a>
+          <a href="departments.html#aiml">AI & Data Science</a>
+          <a href="departments.html#ece">Electronics & Comm.</a>
+          <a href="departments.html#mech">Mechanical</a>
+          <a href="departments.html#civil">Civil</a>
+        </div>
+      </div>
+      <div>
+        <h4>Contact Info</h4>
+        <div class="footer-contact-item"><i class="fas fa-map-marker-alt"></i><span>SRM Nagar, Kattankulathur<br>Chennai, Tamil Nadu 603203</span></div>
+        <div class="footer-contact-item"><i class="fas fa-phone-alt"></i><span>+91 44 2741 7000</span></div>
+        <div class="footer-contact-item"><i class="fas fa-envelope"></i><span>admissions@srmuniversity.edu.in</span></div>
+        <div class="footer-contact-item"><i class="fas fa-clock"></i><span>Mon - Sat: 9:00 AM - 5:00 PM</span></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 SRM University of Science & Technology. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to Top"><i class="fas fa-arrow-up"></i></button>
+  <script src="script.js"></script>
+</body>
+</html>

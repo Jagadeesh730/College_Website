@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - SRM University</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="loading-screen">
+    <img src="assets/images/logo/college-logo.svg" alt="Logo" class="loader-logo">
+    <div class="loader-spinner"></div>
+    <div class="loader-text">Loading...</div>
+    <div class="loader-progress"><div class="loader-progress-bar"></div></div>
+  </div>
+  <div id="toast-container" class="toast-container"></div>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-brand">
+      <img src="assets/images/logo/college-logo.svg" alt="College Logo">
+      <span class="college-name">SRM University</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="departments.html" class="dropdown-toggle">Departments <i class="fas fa-chevron-down"></i></a>
+        <ul class="dropdown-menu">
+          <li><a href="departments.html#cse">Computer Science</a></li>
+          <li><a href="departments.html#it">Information Technology</a></li>
+          <li><a href="departments.html#aiml">AI & Data Science</a></li>
+          <li><a href="departments.html#ece">Electronics & Comm.</a></li>
+          <li><a href="departments.html#eee">Electrical & Electronics</a></li>
+          <li><a href="departments.html#mech">Mechanical</a></li>
+          <li><a href="departments.html#civil">Civil</a></li>
+        </ul>
+      </li>
+      <li><a href="courses.html" class="dropdown-toggle">Courses <i class="fas fa-chevron-down"></i></a>
+        <ul class="dropdown-menu">
+          <li><a href="courses.html#ug">Undergraduate</a></li>
+          <li><a href="courses.html#pg">Postgraduate</a></li>
+          <li><a href="courses.html#btech">B.Tech</a></li>
+          <li><a href="courses.html#mtech">M.Tech</a></li>
+          <li><a href="courses.html#mba">MBA</a></li>
+        </ul>
+      </li>
+      <li><a href="admissions.html">Admissions</a></li>
+      <li><a href="placements.html">Placements</a></li>
+      <li><a href="faculty.html">Faculty</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><button class="theme-toggle" aria-label="Toggle Dark Mode"><i class="fas fa-moon"></i></button></li>
+    </ul>
+    <div class="menu-toggle"><span></span><span></span><span></span></div>
+  </nav>
+
+  <div id="page-content">
+    <section class="page-header">
+      <h1>About SRM University</h1>
+      <p>Discover our journey of excellence since 1985</p>
+      <div class="breadcrumb"><a href="index.html">Home</a> <span>/</span> <span>About</span></div>
+    </section>
+
+    <!-- History -->
+    <section class="section">
+      <div class="section-title reveal slide-up">
+        <h2>Our History</h2>
+        <p>From humble beginnings to a premier institution</p>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item reveal slide-left">
+          <div class="timeline-content">
+            <h3>Foundation</h3>
+            <div class="year">1985</div>
+            <p>SRM University was founded with a vision to provide quality education in engineering and technology. Started with just 3 departments and 180 students.</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal slide-right">
+          <div class="timeline-content">
+            <h3>Deemed University Status</h3>
+            <div class="year">2002</div>
+            <p>Recognized as a Deemed-to-be-University under Section 3 of UGC Act, marking a significant milestone in our academic journey.</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal slide-left">
+          <div class="timeline-content">
+            <h3>NAAC A+ Accreditation</h3>
+            <div class="year">2010</div>
+            <p>Awarded A+ grade by NAAC, recognizing our commitment to academic excellence, research, and infrastructure development.</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal slide-right">
+          <div class="timeline-content">
+            <h3>Research Excellence</h3>
+            <div class="year">2018</div>
+            <p>Established 15 research centers and collaborated with top global universities for joint research programs.</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal slide-left">
+          <div class="timeline-content">
+            <h3>NIRF Top 50</h3>
+            <div class="year">2026</div>
+            <p>Ranked among top 50 universities in India by NIRF. Campus expanded to 250+ acres with 10,000+ students.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Vision Mission -->
+    <section class="section section-bg-light">
+      <div class="grid-3" style="max-width:var(--max-width);margin:0 auto;">
+        <div class="achievement-card reveal zoom-in">
+          <i class="fas fa-eye"></i>
+          <h3>Our Vision</h3>
+          <p>To be a global leader in higher education, fostering innovation, research, and holistic development to create responsible citizens and future-ready professionals.</p>
+        </div>
+        <div class="achievement-card reveal zoom-in">
+          <i class="fas fa-bullseye"></i>
+          <h3>Our Mission</h3>
+          <p>Provide quality education through innovative teaching, promote cutting-edge research, build industry partnerships, and nurture entrepreneurial spirit among students.</p>
+        </div>
+        <div class="achievement-card reveal zoom-in">
+          <i class="fas fa-star"></i>
+          <h3>Our Values</h3>
+          <p>Excellence, Innovation, Integrity, Inclusivity, Sustainability, and Social Responsibility guide everything we do at SRM.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Messages -->
+    <section class="section">
+      <div class="section-title reveal slide-up">
+        <h2>Messages</h2>
+        <p>From our leadership team</p>
+      </div>
+      <div style="max-width:var(--max-width);margin:0 auto;">
+        <div class="message-card reveal slide-left">
+          <img src="assets/images/faculty/faculty1.svg" alt="Principal">
+          <div>
+            <h3>Dr. R. Venkata Rao</h3>
+            <div class="designation">Principal & Dean</div>
+            <p>Welcome to SRM University of Science & Technology. As Principal, I am proud to lead an institution that has consistently delivered excellence in education, research, and innovation for over four decades. Our dedicated faculty, state-of-the-art infrastructure, and student-centric approach create an environment where every student can thrive and achieve their full potential.</p>
+            <p>At SRM, we believe in holistic education that combines academic rigor with extracurricular activities, preparing our students not just for careers but for life. I invite you to explore our campus and discover the SRM difference.</p>
+          </div>
+        </div>
+        <div class="message-card reveal slide-right">
+          <img src="assets/images/faculty/faculty2.svg" alt="Chairman">
+          <div>
+            <h3>Shri. R. Srinivasan</h3>
+            <div class="designation">Chairman</div>
+            <p>SRM University has always been driven by the vision to make quality education accessible to all. Our journey from a small college to a premier university is a testament to our commitment to excellence. We have consistently invested in infrastructure, faculty, and research to ensure our students receive the best education possible.</p>
+            <p>I am confident that SRM will continue to be a beacon of knowledge and innovation, shaping the leaders of tomorrow. I welcome you to be a part of the SRM family and contribute to our legacy of excellence.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Accreditations -->
+    <section class="section section-bg-light">
+      <div class="section-title reveal slide-up">
+        <h2>Accreditations & Rankings</h2>
+        <p>Recognitions that reflect our commitment to quality</p>
+      </div>
+      <div class="grid-4" style="max-width:var(--max-width);margin:0 auto;">
+        <div class="facility-card reveal zoom-in">
+          <i class="fas fa-award"></i>
+          <h3>NAAC A+</h3>
+          <p>Accredited with A+ grade by National Assessment and Accreditation Council</p>
+        </div>
+        <div class="facility-card reveal zoom-in">
+          <i class="fas fa-university"></i>
+          <h3>UGC Approved</h3>
+          <p>Recognized by University Grants Commission under Section 2(f) and 12(B)</p>
+        </div>
+        <div class="facility-card reveal zoom-in">
+          <i class="fas fa-trophy"></i>
+          <h3>NIRF Rank 45</h3>
+          <p>Ranked 45th among top universities in India by NIRF 2026</p>
+        </div>
+        <div class="facility-card reveal zoom-in">
+          <i class="fas fa-globe"></i>
+          <h3>NBA Accredited</h3>
+          <p>All eligible programs accredited by National Board of Accreditation</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-about">
+        <h3><img src="assets/images/logo/college-logo.svg" alt="Logo" style="width:40px;height:40px;display:inline;vertical-align:middle;margin-right:10px;">SRM University</h3>
+        <p>SRM University of Science & Technology is committed to providing quality education, fostering research, and developing future leaders.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <div class="footer-links">
+          <a href="about.html">About Us</a>
+          <a href="admissions.html">Admissions</a>
+          <a href="courses.html">Courses</a>
+          <a href="placements.html">Placements</a>
+          <a href="faculty.html">Faculty</a>
+          <a href="events.html">Events</a>
+        </div>
+      </div>
+      <div>
+        <h4>Departments</h4>
+        <div class="footer-links">
+          <a href="departments.html#cse">Computer Science</a>
+          <a href="departments.html#it">Information Technology</a>
+          <a href="departments.html#aiml">AI & Data Science</a>
+          <a href="departments.html#ece">Electronics & Comm.</a>
+          <a href="departments.html#mech">Mechanical</a>
+          <a href="departments.html#civil">Civil</a>
+        </div>
+      </div>
+      <div>
+        <h4>Contact Info</h4>
+        <div class="footer-contact-item"><i class="fas fa-map-marker-alt"></i><span>SRM Nagar, Kattankulathur<br>Chennai, Tamil Nadu 603203</span></div>
+        <div class="footer-contact-item"><i class="fas fa-phone-alt"></i><span>+91 44 2741 7000</span></div>
+        <div class="footer-contact-item"><i class="fas fa-envelope"></i><span>admissions@srmuniversity.edu.in</span></div>
+        <div class="footer-contact-item"><i class="fas fa-clock"></i><span>Mon - Sat: 9:00 AM - 5:00 PM</span></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 SRM University of Science & Technology. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to Top"><i class="fas fa-arrow-up"></i></button>
+  <script src="script.js"></script>
+</body>
+</html>
